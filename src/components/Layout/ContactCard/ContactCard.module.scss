@@ -1,0 +1,46 @@
+.contactContainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 50px;
+  z-index: 5;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.contactData {
+  text-align: center;
+  text-transform: uppercase;
+  flex: 1;
+
+  h3 {
+    font-family: var(--font-family-primary);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: var(--color-text-primary);
+    margin-bottom: 50px;
+  }
+
+  a {
+    color: var(--color-text-primary);
+  }
+
+  p {
+    font-family: var(--font-family-secondary);
+    text-transform: none;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: var(--color-text-primary);
+    line-height: 2;
+    margin: 0;
+  }
+}

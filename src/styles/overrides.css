@@ -1,0 +1,25 @@
+:root {
+  --yarl__color_backdrop: transparent;
+}
+
+.yarl__root {
+  backdrop-filter: brightness(0.33) !important;
+}
+
+.yarl__slide_image {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+}
+
+.fslightbox-container {
+  background: none !important;
+  backdrop-filter: brightness(0.33) !important;
+}
+
+.fslightboxb {
+  background: transparent !important;
+}
+
+.fslightbox-source {
+  max-width: 1024px !important;
+  max-height: 576px !important;
+}

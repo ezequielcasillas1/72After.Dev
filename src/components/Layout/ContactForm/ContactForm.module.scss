@@ -1,0 +1,127 @@
+.formContainer {
+  position: relative;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.title {
+  position: relative;
+  font-family: var(--font-family-primary);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 55px;
+  text-align: center;
+  text-transform: none;
+  letter-spacing: -0.04em;
+  color: var(--color-text-primary);
+  width: 100%;
+  line-height: 1.15;
+  margin-bottom: 65px;
+
+  @media (max-width: 768px) {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+}
+
+.topInput {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column !important;
+  }
+}
+
+.inputContainer {
+  input,
+  textarea {
+    position: relative;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 0 !important;
+    border-bottom: 1px solid var(--color-text-dark) !important;
+    margin: 15px;
+    background: none;
+    font-family: var(--font-family-secondary);
+    font-size: 13px;
+    line-height: 1.5;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: none !important;
+
+    &::placeholder {
+      color: var(--color-text-dark);
+    }
+
+    &:focus {
+      outline: none;
+
+      &::placeholder {
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      width: (calc(100vw - 40px));
+    }
+  }
+}
+
+.inputContainer textarea {
+  height: 100px;
+  min-height: 100px;
+  max-height: 300px;
+}
+
+.relative {
+  position: relative;
+}
+
+.error {
+  position: absolute;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-size: 9px;
+  text-transform: uppercase;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  color: var(--color-text-primary);
+  padding: 0;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+}
+
+.single input,
+.single textarea {
+  width: 630px;
+
+  @media (max-width: 768px) {
+    width: (calc(100vw - 40px));
+  }
+}
+
+.submitButton {
+  margin-top: 12px;
+  margin-bottom: 55px;
+}
+
+.closeButton {
+  display: flex;
+  border: none;
+  background: none;
+  justify-self: center;
+  align-self: center;
+  color: var(--color-text-dark);
+}

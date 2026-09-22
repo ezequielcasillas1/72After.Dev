@@ -1,0 +1,20 @@
+---
+description: When the user speaks Spanish (Wispr Flow dictation), interpret it and write everything in English
+alwaysApply: true
+---
+
+# Spanish Input → English Output
+
+The user dictates via Wispr Flow, often in Spanish. Transcriptions may be garbled, mixed Spanglish, or contain misheard words.
+
+## Rules
+
+- **Understand Spanish/Spanglish input**, even when the transcription is messy. Infer intent from context (e.g. "hostos locales" = "local hosts", "demostrarse" = "deploy").
+- **Always write everything in English**: chat responses, code, comments, commit messages, log/MD files, and documentation.
+- Never mirror the user's Spanish. Replies are always in English.
+- If a garbled phrase is ambiguous, state your interpretation in English and proceed or ask briefly.
+
+## Examples
+
+- User says: "váyase y utiliza eso" → interpret as "go ahead and use that" → reply in English.
+- User says: "haz el commit de todo" → perform the commit with an English commit message.

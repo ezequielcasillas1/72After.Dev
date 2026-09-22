@@ -1,0 +1,257 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: none;
+
+  width: 100%;
+  z-index: 999;
+  padding: 0;
+  margin: 0;
+  transition:
+    background-color 0.6s ease,
+    box-shadow 0.6s ease;
+}
+
+.navbarScrolled {
+  background-color: var(--color-background-primary);
+  box-shadow: 0 0 15px rgba(196, 196, 196, 0.35);
+}
+
+.navbarContainer {
+  z-index: 5;
+  padding: 46px 50px 22px 50px;
+  min-width: 100%;
+  margin: 0;
+
+  transition: padding 0.6s ease;
+
+  @media (max-width: 991px) {
+    padding: 50px 50px 25px 50px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+}
+
+.navbarContainerScrolled {
+  padding: 20px 50px;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+}
+
+.line {
+  position: relative;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  opacity: 1;
+  width: calc(100% - 100px);
+  z-index: 5;
+  margin: 0;
+  color: transparent;
+
+  @media (max-width: 768px) {
+    width: calc(100% - 40px);
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.brandText {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  color: var(--color-text-light);
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1;
+  transition: color 0.6s ease;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--color-text-light);
+    text-decoration: none;
+  }
+}
+
+.brandTextScrolled {
+  color: var(--color-text-dark);
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--color-text-dark);
+  }
+}
+
+.brandPrimary {
+  font-family: var(--font-family-primary);
+  font-size: 24px;
+  letter-spacing: 0.02em;
+}
+
+.brandSecondary {
+  font-family: var(--font-family-secondary);
+  font-size: 21px;
+  letter-spacing: 0.06em;
+}
+
+.mobileButton {
+  padding: 0;
+  border: none;
+  outline: none;
+  box-shadow: none !important;
+
+  svg {
+    transition: color 0.3s ease;
+  }
+}
+
+.linkText {
+  font-family: "Montserrat", sans-serif;
+  padding: 12px 15px !important;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--color-text-light);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.05em;
+  transition: color 0.6s ease;
+
+  @media (max-width: 991px) {
+    color: var(--color-text-primary);
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: var(--color-text-light);
+
+    @media (max-width: 991px) {
+      color: var(--color-text-primary);
+    }
+  }
+}
+
+.linkTextScrolled {
+  color: var(--color-text-primary);
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--color-text-primary);
+  }
+}
+
+.dropdown > a:first-child {
+  // Dropdown Text
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-text-light) !important;
+  transition: color 0.6s ease;
+
+  @media (max-width: 991px) {
+    color: var(--color-text-primary) !important;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--color-text-light) !important;
+
+    @media (max-width: 991px) {
+      color: var(--color-text-primary) !important;
+    }
+  }
+}
+
+.dropdown {
+  div {
+    // Dropdown Menu Box
+    margin-top: 26px !important;
+    margin-left: -31px !important;
+    padding: 12px 0 !important;
+    background-color: var(--color-background-primary);
+    border-radius: 0 0 10px 10px;
+    border: none;
+    box-shadow: 0 10px 10px rgba(196, 196, 196, 0.35);
+    transition: margin-top 0.6s ease;
+
+    @media (max-width: 991px) {
+      margin: 0 !important;
+      padding: 0 !important;
+      box-shadow: none;
+      border-radius: 0;
+    }
+  }
+}
+
+.dropdownScrolled > a:first-child {
+  // Dropdown Text
+  color: var(--color-text-primary) !important;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--color-text-primary) !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .dropdownScrolled div {
+    // Dropdown Menu Box
+    margin-top: 23px !important;
+  }
+}
+
+// Dropdown Menu Link Text
+.dropdownItem {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 12px;
+  color: var(--color-text-primary);
+  background-color: transparent !important;
+  transition: all 0.6s ease;
+
+  @media (max-width: 991px) {
+    color: var(--color-text-primary);
+    padding: 8px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--color-text-primary);
+  }
+}
+
+@media (max-width: 991px) {
+  .overlay {
+    margin-top: 20px;
+    overflow-y: auto;
+    max-height: 50vh;
+    background-color: var(--color-background-primary);
+
+    div:first-child {
+      padding: 16px 0;
+    }
+  }
+}

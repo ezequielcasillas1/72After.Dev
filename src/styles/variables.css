@@ -1,0 +1,27 @@
+:root {
+  /* Typography */
+  --font-family-primary: "Velodrome", sans-serif;
+  --font-family-secondary: "Gamero", sans-serif;
+
+  --color-text-primary: #4b5563;
+  --color-text-secondary: #fff;
+  --color-text-tertiary: #a3a3a3;
+  --color-text-dark: #111111;
+  --color-text-light: #fff;
+
+  /* UI */
+  --color-background-primary: #fff;
+  --color-background-secondary: #f5f5f5;
+  --color-background-tertiary: #0a0a0a;
+  --color-background-dark: #000000;
+  --color-background-light: #fff;
+
+  --color-accent: #e5e5e5;
+  --color-highlight: #111111;
+  --color-highlight-strong: #000000;
+  --color-highlight-deep: #1a1a1a;
+  --color-disabled: #ccc;
+
+  /* 72After brand gradient: black -> gray -> white (monochrome) */
+  --gradient-brand: linear-gradient(135deg, #000 0%, #4a4a4a 55%, #fff 100%);
+}

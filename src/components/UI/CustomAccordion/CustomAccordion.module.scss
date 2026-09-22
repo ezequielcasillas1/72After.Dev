@@ -1,0 +1,51 @@
+.accordionItem {
+  border: none !important;
+  margin-bottom: 15px;
+  padding-left: 0;
+  padding-right: 0;
+
+  div {
+    background: var(--color-background-primary) !important;
+  }
+}
+
+.headerText button {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: var(--font-family-primary);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 0.02em;
+  color: var(--color-text-primary) !important;
+  background: var(--color-background-primary) !important;
+  border: none;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  line-height: 2;
+
+  &:focus {
+    border: none !important;
+    box-shadow: none !important;
+    background: var(--color-background-primary) !important;
+  }
+
+  &::after {
+    background-image: var(--bs-accordion-btn-icon) !important;
+  }
+}
+
+.bodyText {
+  font-family: var(--font-family-secondary);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding-left: 0;
+  padding-right: 0;
+  line-height: 2;
+  text-align: left;
+  color: var(--color-text-primary);
+}

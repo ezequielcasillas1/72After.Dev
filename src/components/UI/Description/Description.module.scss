@@ -1,0 +1,16 @@
+.descriptionContainer {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+}
+
+.description {
+  text-align: left;
+  font-family: var(--font-family-secondary);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--color-text-primary);
+  line-height: 2;
+  margin: 0;
+}
