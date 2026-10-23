@@ -8,17 +8,40 @@
 <style>
 @font-face{font-family:"Montserrat";src:url("/fonts/Montserrat-VariableFont_wght.woff2") format("woff2");font-weight:100 900;font-display:swap}
 @font-face{font-family:"Raleway";src:url("/fonts/Raleway-VariableFont_wght.woff2") format("woff2");font-weight:100 900;font-display:swap}
-:root{color-scheme:light dark;--bg:#fff;--fg:#1a1a1a;--muted:#555;--accent:#111}
-@media (prefers-color-scheme:dark){:root{--bg:#0e0e10;--fg:#e8e8ea;--muted:#a0a0a8;--accent:#fff}}
-body{margin:0;background:var(--bg);color:var(--fg);font-family:"Raleway",system-ui,sans-serif;line-height:1.7;font-size:1.05rem}
-main{max-width:720px;margin:0 auto;padding:3rem 1.25rem 4rem}
-h1{font-family:"Montserrat",system-ui,sans-serif;font-weight:700;line-height:1.25;font-size:2rem;margin:0 0 .5rem;color:var(--accent)}
+@font-face{font-family:"Velodrome";src:url("/fonts/Velodrome.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"Gamero";src:url("/fonts/Gamero.ttf") format("truetype");font-display:swap}
+:root{color-scheme:light;--fg:#111111;--muted:#4b5563;--link:#000;--line:#e5e5e5}
+*{box-sizing:border-box}
+html,body{margin:0;background:#fff}
+body{color:var(--fg);font-family:"Raleway",system-ui,sans-serif;line-height:1.7;font-size:1.05rem;display:flex;flex-direction:column;min-height:100vh}
+.site-header{border-bottom:1px solid var(--line);background:#fff}
+.site-header .wrap,.site-footer .wrap{max-width:1200px;margin:0 auto;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:baseline;gap:8px;color:#111;text-decoration:none;text-transform:uppercase;line-height:1}
+.brand .p{font-family:"Velodrome",sans-serif;font-size:24px;letter-spacing:.02em}
+.brand .s{font-family:"Gamero",sans-serif;font-size:21px;letter-spacing:.06em}
+nav a{font-family:"Montserrat",sans-serif;font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#111;text-decoration:none;padding:8px 10px}
+nav a:hover{text-decoration:underline}
+main{flex:1;width:100%;max-width:720px;margin:0 auto;padding:2.5rem 1.25rem 2rem}
+h1{font-family:"Montserrat",system-ui,sans-serif;font-weight:700;line-height:1.25;font-size:2rem;margin:0 0 .5rem;color:#000}
 .updated{color:var(--muted);margin:0 0 2rem}
+main p:last-child{margin-bottom:0}
 strong{font-family:"Montserrat",system-ui,sans-serif;font-weight:600}
-a{color:inherit}
+main a{color:var(--link);font-weight:600;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+main a:hover{background:#111;color:#fff;text-decoration:none}
+.site-footer{background:#0a0a0a;color:#a3a3a3;font-size:.9rem}
+.site-footer .brand{color:#fff}
+.site-footer .social{display:flex;gap:16px}
+.site-footer a{color:#fff;text-decoration:none}
+.site-footer a:hover{text-decoration:underline}
+.site-footer p{margin:0}
+@media (max-width:600px){h1{font-size:1.6rem}nav a{padding:6px 6px}}
 </style>
 </head>
 <body>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="/"><span class="p">72</span><span class="s">AFTER</span></a>
+<nav><a href="/">Home</a><a href="/about">About</a><a href="/gallery">Work</a><a href="/contact">Contact</a></nav>
+</div></header>
 <main>
 <h1>King Bible Chain Reference: Privacy Policy</h1>
 <p class="updated">Last updated: October 23, 2026</p>
@@ -31,5 +54,10 @@ a{color:inherit}
 <p><strong>Changes.</strong> We may update this policy. Any changes will be posted on this page with a new "Last updated" date.</p>
 <p><strong>Contact.</strong> For privacy questions, email <a href="mailto:72afterda@gmail.com">72afterda@gmail.com</a>.</p>
 </main>
+<footer class="site-footer"><div class="wrap">
+<a class="brand" href="/"><span class="p">72</span><span class="s">AFTER</span></a>
+<div class="social"><a href="https://github.com/72after" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://x.com/72after" target="_blank" rel="noopener noreferrer">X</a><a href="https://linkedin.com/company/72after" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+<p>&copy; All Rights Reserved.</p>
+</div></footer>
 </body>
 </html>
